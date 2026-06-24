@@ -5,14 +5,14 @@ module(
     compatibility_level = 0,
 )
 
-bazel_dep(name = "verilator", version = "5.036.bcr.3")
-bazel_dep(name = "rules_verilator", version = "0.1.0")
-bazel_dep(name = "platforms", version = "1.0.0")
+bazel_dep(name = "verilator", version = "5.046.bcr.5")
+bazel_dep(name = "rules_verilator", version = "1.1.0")
+bazel_dep(name = "platforms", version = "1.1.0")
 bazel_dep(name = "rules_license", version = "1.0.0")
-bazel_dep(name = "bazel_skylib", version = "1.8.2")
-bazel_dep(name = "rules_cc", version = "0.2.14")
+bazel_dep(name = "bazel_skylib", version = "1.9.0")
+bazel_dep(name = "rules_cc", version = "0.2.20")
 
 # Dev dependencies for tests
-bazel_dep(name = "rules_venv", version = "0.12.0", dev_dependency = True)
-bazel_dep(name = "rules_shell", version = "0.6.1", dev_dependency = True)
+bazel_dep(name = "rules_venv", version = "0.19.0", dev_dependency = True)
+bazel_dep(name = "rules_shell", version = "0.8.0", dev_dependency = True)
 bazel_dep(name = "googletest", version = "1.17.0.bcr.2", dev_dependency = True)
